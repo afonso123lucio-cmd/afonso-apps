@@ -40,13 +40,13 @@ function catalog(){const filters=['Todos','Android','Windows','Em desenvolviment
 function downloadPanel(){
   const available=releaseReady();
   const action=available
-    ? `<a class="btn btn-primary" href="${esc(releaseAndroid.url)}" download="${esc(releaseAndroid.filename)}">↓ Baixar APK oficial</a>`
+    ? `<a class="btn btn-primary" href="${esc(lancamentoAndroid.URL)}" download="${esc(lancamentoAndroid.nomeArquivo)}">↓ Baixar APK oficial</a>`
     : `<button class="btn btn-disabled" disabled aria-disabled="true">↓ Download em preparação</button>`;
   return `<section class="info-box release-box" id="android-download">
     <div class="release-heading"><div><span class="eyebrow">Versão Android</span><h2>Baixe no seu celular</h2>
-    <p>Versão ${esc(releaseAndroid.version)} testada no BlueStacks, Xiaomi e Samsung. Instale o APK oficial para usar a versão mais recente disponível neste portal.</p></div><span class="android-pill">Android · ARM64</span></div>
+    <p>Versão ${esc(lancamentoAndroid.versao)} testada no BlueStacks, Xiaomi e Samsung. Instale o APK oficial para usar a versão mais recente disponível neste portal.</p></div><span class="android-pill">Android · ARM64</span></div>
     <div class="release-actions">${action}<a class="btn btn-secondary" href="#/updates">Ver novidades →</a></div>
-    <div class="release-facts"><span>Versão: <strong>${esc(releaseAndroid.version)}</strong></span><span>Arquivo: <strong>${available?esc(releaseAndroid.filename || 'APK oficial'):'Aguardando publicação'}</strong></span>${available&&releaseAndroid.size?`<span>Tamanho: <strong>${esc(releaseAndroid.size)}</strong></span>`:''}</div>
+    <div class="release-facts"><span>Versão: <strong>${esc(lancamentoAndroid.versao)}</strong></span><span>Arquivo: <strong>${available?esc(lancamentoAndroid.nomeArquivo || 'APK oficial'):'Aguardando publicação'}</strong></span>${available&&lancamentoAndroid.tamanho?`<span>Tamanho: <strong>${esc(lancamentoAndroid.tamanho)}</strong></span>`:''}</div>
     ${available?'':`<div class="notice">O download será habilitado quando o arquivo oficial for incluído e verificado.</div>`}
   </section>`;
 }
@@ -68,7 +68,7 @@ function installation(){
 }
 function downloads(){
   return `<section class="page-head"><span class="eyebrow">Central de downloads</span><h1>Aplicativos oficiais.</h1><p>Escolha sua plataforma e acompanhe quando cada arquivo estiver disponível.</p></section>
-  <div class="download-list"><article class="download-item">${icon(apps[0])}<div><h2>Afonso Downloader</h2><p>Android · ${esc(releaseAndroid.version)}</p><span class="status candidate">${releaseReady()?'Download disponível':'Em preparação'}</span></div><a class="btn btn-secondary" href="#/app/downloader">Ver detalhes →</a></article>
+  <div class="download-list"><article class="download-item">${icon(apps[0])}<div><h2>Afonso Downloader</h2><p>Android · ${esc(lancamentoAndroid.versao)}</p><span class="status candidate">${releaseReady()?'Download disponível':'Em preparação'}</span></div><a class="btn btn-secondary" href="#/app/downloader">Ver detalhes →</a></article>
   <article class="download-item">${icon(apps[1])}<div><h2>Afonso PDF</h2><p>Windows · Consulte o site do projeto</p></div><a class="btn btn-secondary" href="https://afonso123lucio-cmd.github.io/afonso-pdf/" target="_blank" rel="noopener noreferrer">Site do Afonso PDF ↗</a></article>
   ${apps.slice(2).map(a=>`<article class="download-item">${icon(a)}<div><h2>${esc(a.name)}</h2><p>${esc(a.platforms.join(' · '))} · ${esc(a.status)}</p></div><button class="btn btn-disabled" disabled>Em breve</button></article>`).join('')}</div>`;
 }
