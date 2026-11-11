@@ -9,11 +9,14 @@ const releaseAndroid = {
   minimumAndroid: null,
   published: true
 };
+
 const releaseReady = () => Boolean(
-  releaseAndroid.published && releaseAndroid.url &&
-  /^(https:\/\/[^\s]+|downloads\/[A-Za-z0-9._-]+\.apk)$/i.test(releaseAndroid.url) &&
-  /^[a-f0-9]{64}$/i.test(releaseAndroid.sha256 || '')
+  lancamentoAndroid.publicado &&
+  lancamentoAndroid.URL &&
+  /^https:\/\/[^\s]+\.apk(?:[?#].*)?$/i.test(lancamentoAndroid.URL) &&
+  /^[a-f0-9]{64}$/i.test(lancamentoAndroid.sha256 || '')
 );
+
 const apps=[
 {id:'downloader',name:'Afonso Downloader',icon:'↓',bg:'#44306b',category:'Multimídia',description:'Seus vídeos, fotos e áudios organizados em um só lugar, com uma interface prática e moderna.',platforms:['Android','Windows'],status:'Candidato a lançamento',candidate:true,version:'1.0.18+19 (Android)',features:['Downloads de mídias públicas compatíveis','Organização por vídeos, fotos e áudios','Histórico de downloads','Prévia e seleção de arquivos','Interface moderna em preto e roxo','Atualizações sem perder o histórico'],details:'O Afonso Downloader Mobile 1.0.18 foi testado em BlueStacks, Xiaomi e Samsung. A auditoria técnica ainda possui verificações pendentes; utilize o APK somente de fontes oficiais.'},
 {id:'pdf',name:'Afonso PDF',icon:'▤',bg:'#2b4b66',category:'Produtividade',description:'Leitura de PDFs e documentos com navegação, zoom, marcadores e anotações.',platforms:['Windows'],status:'Projeto existente',version:'A confirmar',features:['Leitura de documentos','Zoom e navegação por páginas','Marcadores e anotações','Arquivos recentes','Interface escura e clara'],details:'O Afonso PDF já possui um site próprio. Confira informações e versões no endereço oficial do projeto.',official:'https://afonso123lucio-cmd.github.io/afonso-pdf/'},
