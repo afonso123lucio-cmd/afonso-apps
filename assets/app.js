@@ -10,12 +10,14 @@ const releaseAndroid = {
   published: true
 };
 
+
 const releaseReady = () => Boolean(
   lancamentoAndroid.publicado &&
   lancamentoAndroid.URL &&
   /^https:\/\/[^\s]+\.apk(?:[?#].*)?$/i.test(lancamentoAndroid.URL) &&
   /^[a-f0-9]{64}$/i.test(lancamentoAndroid.sha256 || '')
 );
+
 
 const apps=[
 {id:'downloader',name:'Afonso Downloader',icon:'↓',bg:'#44306b',category:'Multimídia',description:'Seus vídeos, fotos e áudios organizados em um só lugar, com uma interface prática e moderna.',platforms:['Android','Windows'],status:'Candidato a lançamento',candidate:true,version:'1.0.18+19 (Android)',features:['Downloads de mídias públicas compatíveis','Organização por vídeos, fotos e áudios','Histórico de downloads','Prévia e seleção de arquivos','Interface moderna em preto e roxo','Atualizações sem perder o histórico'],details:'O Afonso Downloader Mobile 1.0.18 foi testado em BlueStacks, Xiaomi e Samsung. A auditoria técnica ainda possui verificações pendentes; utilize o APK somente de fontes oficiais.'},
