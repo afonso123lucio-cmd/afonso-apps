@@ -1,6 +1,6 @@
 // Publicação controlada: preencha somente depois de verificar o APK oficial.
 // Sem URL confirmada, o site nunca oferece um download falso.
-const releaseAndroid = {
+const lancamentoAndroid = {
   version: '1.0.18+19',
   filename: 'AfonsoDownloaderMobile-1.0.18+19-arm64-production.apk',
   URL:'https://afonso123lucio-cmd.github.io/afonso-apps/downloads/AfonsoDownloaderMobile-1.0.18+19-arm64-production.apk',
