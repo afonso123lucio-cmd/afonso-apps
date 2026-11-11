@@ -3,7 +3,7 @@
 const releaseAndroid = {
   version: '1.0.18+19',
   filename: 'AfonsoDownloaderMobile-1.0.18+19-arm64-production.apk',
-  url: 'downloads/AfonsoDownloaderMobile-1.0.18+19-arm64-production.apk',
+  URL:'https://afonso123lucio-cmd.github.io/afonso-apps/downloads/AfonsoDownloaderMobile-1.0.18+19-arm64-production.apk',
   sha256: '22b5f3bf10d3053cde029c6380fe454ca633d2b1bfcd8afb6129481b9d4f3dc3',
   size: '20,2 MiB',
   minimumAndroid: null,
