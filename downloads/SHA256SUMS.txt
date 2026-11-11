@@ -1,1 +1,1 @@
-1e6a8fe4951f9c8a84e1ca12b15f78c58d1f41d5cbc8c7c00deabda22dcd9306  AfonsoDownloaderMobile-2.3-arm64.apk
+22b5f3bf10d3053cde029c6380fe454ca633d2b1bfcd8afb6129481b9d4f3dc3  AfonsoDownloaderMobile-1.0.18+19-arm64-production.apk
