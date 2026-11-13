@@ -1,15 +1,15 @@
 {
   "schemaVersion": 1,
   "applicationId": "br.com.afonso.afonso_downloader_mobile",
-  "versionName": "1.0.18",
-  "versionCode": 19,
-  "apkUrl": "https://afonso123lucio-cmd.github.io/afonso-apps/downloads/AfonsoDownloaderMobile-1.0.18+19-arm64-production.apk",
-  "sha256": "22b5f3bf10d3053cde029c6380fe454ca633d2b1bfcd8afb6129481b9d4f3dc3",
+  "versionName": "1.0.19",
+  "versionCode": 20,
+  "apkUrl": "https://afonso123lucio-cmd.github.io/afonso-apps/downloads/AfonsoDownloaderMobile-1.0.19+20-arm64-production.apk",
+  "sha256": "012d2bf09886f50cb91861dfb88649035232b0c73f4faa1afa49bee6322a871f",
   "releaseNotes": [
-    "Versão 1.0.18+19 atualmente publicada no Afonso Apps.",
-    "Proteções de armazenamento, tempo de transferência e validação de endereços da Etapa 2.4.9."
+    "Versão 1.0.19+20 publicada no Afonso Apps.",
+    "Novo sistema de verificação de atualizações e melhorias de segurança da Etapa 2.5."
   ],
   "minAndroidApi": 29,
-  "apkBytes": 21129170,
+  "apkBytes": 21325970,
   "certificateSha256": "aaa115398f02a81c7d990aeeebd4a40a2737348562cde6765e3731aaf26bd7a0"
 }
