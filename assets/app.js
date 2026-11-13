@@ -2,15 +2,14 @@
 // Sem URL confirmada, o site nunca oferece um download falso.
 
 const lancamentoAndroid = {
-  versao: '1.0.18+19',
-  nomeArquivo: 'AfonsoDownloaderMobile-1.0.18+19-arm64-production.apk',
-  URL: 'https://afonso123lucio-cmd.github.io/afonso-apps/downloads/AfonsoDownloaderMobile-1.0.18+19-arm64-production.apk',
-  sha256: '22b5f3bf1ed3053cde029c6380fe454ca633d2b1bfcd8afb6129481b9d4f3dc3',
-  tamanho: '20,2 MiB',
+  versao: '1.0.19+20',
+  nomeArquivo: 'AfonsoDownloaderMobile-1.0.19+20-arm64-production.apk',
+  URL: 'https://afonso123lucio-cmd.github.io/afonso-apps/downloads/AfonsoDownloaderMobile-1.0.19+20-arm64-production.apk',
+  sha256: '012d2bf09886f50cb91861dfb88649035232b0c73f4faa1afa49bee6322a871f',
+  tamanho: '20,3 MiB',
   androidMinimo: 10,
   publicado: true
 };
-
 
 
 const releaseReady = () => Boolean(
